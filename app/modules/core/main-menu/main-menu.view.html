@@ -1,0 +1,11 @@
+<ul class="list-group clg-main-menu clg-hf-menu  animated bounceInLeft" 
+	ng-init="init()">
+	<li class="list-group-item clg-menu-item" 
+		ng-click="executeAction( $event, menu )"
+		ng-repeat="menu in mainMenuList track by $index" >
+		{{ menu.name }}
+		<a href="javascript: void( 0 )" class="clg-icons pull-right">
+			<i class="{{menu.icon}}"></i>	
+		</a>
+	</li>
+</ul>

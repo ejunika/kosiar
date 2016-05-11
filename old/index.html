@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>APP::HOME</title>
+		
+		<link rel="icon" href="./images/favicon.ico" type="image/ico" sizes="16x16">
+		
+		<link type="text/css" rel="stylesheet" href="js/plugins/jquery/jquery-ui.css" />
+		<link type="text/css" rel="stylesheet" href="js/plugins/bootstrap/css/bootstrap-paper.min.css" />
+		
+		<link type="text/css" rel="stylesheet" href="js/plugins/jsTree/themes/bootstrap-theme/proton/style.css" />
+		
+		<link type="text/css" rel="stylesheet" href="css/clgStyle.css" />
+		
+		<link type="text/css" rel="stylesheet" href="app/designer/designer.css" />
+		
+		<script type="text/javascript" src="./app/js/plugins/requirejs/requirejs.js" data-main="app/main"></script>
+
+	</head>
+	<body ng-controller="clg_app_controller" ng-init="onInitCoreModule()">
+	
+		<div clg-header-dir></div>
+		<div clg-main-menu-dir></div>
+		<div clg-breadcrumb-dir></div>
+		
+		<!-- SWITCH START -->
+		<div ng-switch on="clgView" 
+			class="clg-wrapper clg-wrapper-full pull-right">
+			
+			<!-- CASES START -->
+			<div class="full-size" 
+				ng-switch-when="FILE_MANAGER" >
+				<div class="clg-sub-container" 
+					onload="postInclude( 'FILE_MANAGER' )" 
+					ng-include="'app/file_manager/file_manager.html'">
+				</div>
+			</div>
+			<div class="full-size" 
+				ng-switch-when="DESIGNER" >
+				<div class="clg-sub-container" 
+					onload="postInclude( 'DESIGNER' )" 
+					ng-include="'app/designer/designer.html'">
+				</div>
+			</div>
+			<div class="full-size" 
+				ng-switch-default >
+				<div class="clg-sub-container" 
+					onload="postInclude( 'ADMIN_OPTIONS' )" 
+					ng-include="'app/core/default_view.html'">
+				</div>
+			</div>
+			<!-- CASES END -->
+			
+			<div clg-modal-dialog-dir></div>
+		</div>
+		<!-- SWITCH END -->
+
+
+
+		<div id="context-menu">
+			<ul class="dropdown-menu" role="menu">
+				<li ng-repeat="cMenu in $parent.contextMenuList">
+					<a id="{{ cMenu.id }}" 
+						tabindex="-1" 
+						href="#">
+						{{ cMenu.displayName }}
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+	</body>
+</html>
+
+

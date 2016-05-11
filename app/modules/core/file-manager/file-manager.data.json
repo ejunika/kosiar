@@ -1,0 +1,54 @@
+[
+    {
+        "text": "My Documents",
+        "id": "1111",
+        "parent": "#",
+        "children": [
+            {
+                "text": "A",
+                "id": "1112",
+                "parent": "1111",
+                "children": []
+            },
+            {
+                "text": "Axyz",
+                "id": "1113",
+                "parent": "1111",
+                "children": [
+                    {
+                        "text": "New children",
+                        "id": "1114",
+                        "parent": "1113",
+                        "children": []
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "text": "Public Documents",
+        "id": "2222",
+        "parent": "#",
+        "children": [
+            {
+                "text": "B",
+                "id": "2223",
+                "parent": "2222",
+                "children": []
+            }
+        ]
+    },
+    {
+        "text": "Favourite Documents",
+        "id": "3333",
+        "parent": "#",
+        "children": [
+            {
+                "text": "C",
+                "id": "3334",
+                "parent": "3333",
+                "children": []
+            }
+        ]
+    }
+]

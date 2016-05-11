@@ -1,0 +1,8 @@
+<ul class="breadcrumb clg-breadcrumb">
+	<li ng-if="bc.isActive != true" ng-repeat="bc in DATA_FACTORY.BREADCRUMB.displayList">
+		<a href="javascript: void( 0 )">{{bc.name}}</a>
+	</li>
+	<li ng-if="bc.isActive == true" 
+		ng-repeat="bc in DATA_FACTORY.BREADCRUMB.displayList" 
+		class="active" >{{bc.name}}</li>
+</ul>

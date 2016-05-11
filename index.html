@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>APP</title>
+		<link type="text/css" rel="stylesheet" href="//code.jquery.com/ui/1.12.0-rc.1/themes/smoothness/jquery-ui.css" />
+		<link type="text/css" rel="stylesheet" href="//bootswatch.com/paper/bootstrap.min.css" />
+		<link type="text/css" rel="stylesheet" href="./css/animate.css" />
+		<link type="text/css" rel="stylesheet" href="./old/js/plugins/jsTree/themes/bootstrap-theme/proton/style.css" />
+		<link type="text/css" rel="stylesheet" href="./css/app.style.css" />
+		<link type="text/css" rel="stylesheet" href="./app/modules/designer/css/designer.style.css" />
+		<script type="text/javascript" src="./node_modules/requirejs/require.js" data-main="./app/app.main"></script>
+	</head>
+	<body ng-controller="core.ctrl" ng-init="init()">
+		<nj-login></nj-login>
+		<nj-header></nj-header>
+		<nj-main-menu></nj-main-menu>
+		<nj-bread-crumb></nj-bread-crumb>
+		<nj-app-screen></nj-app-screen>
+		<nj-modal-dialog></nj-modal-dialog>
+		<nj-cxt-menu></nj-cxt-menu>
+	</body>
+</html>

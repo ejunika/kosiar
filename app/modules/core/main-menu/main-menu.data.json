@@ -1,0 +1,52 @@
+{
+    "menus": [
+        {
+            "id": "home",
+            "name": "Home",
+            "icon": "glyphicon glyphicon-home",
+            "action": "showHomePage"
+        },
+        {
+            "id": "admin",
+            "name": "Administrator",
+            "icon": "glyphicon glyphicon-king",
+            "action": "openAdminOptions"
+        },
+        {
+            "id": "library",
+            "name": "Library",
+            "icon": "glyphicon glyphicon-list-alt",
+            "action": "openLibraryOptions"
+        },
+        {
+            "id": "accounts",
+            "name": "Accounts",
+            "icon": "glyphicon glyphicon-usd",
+            "action": "openAccountsOptions"
+        },
+        {
+            "id": "friends",
+            "name": "Friends",
+            "icon": "glyphicon glyphicon-heart",
+            "action": "openFriendsOptions"
+        },
+        {
+            "id": "market",
+            "name": "Market",
+            "icon": "glyphicon glyphicon-shopping-cart",
+            "action": "openMarketOptions"
+        },
+        {
+            "id": "travel",
+            "name": "Travel",
+            "icon": "glyphicon glyphicon-plane",
+            "action": "openTravelOptions"
+        },
+        {
+            "id": "designer",
+            "name": "Designer",
+            "icon": "glyphicon glyphicon-picture",
+            "action": "openDesigner"
+        }
+    ]
+}

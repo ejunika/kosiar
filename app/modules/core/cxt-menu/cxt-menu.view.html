@@ -1,0 +1,11 @@
+<div id="context-menu">
+	<ul class="dropdown-menu" role="menu">
+		<li ng-repeat="cMenu in $parent.contextMenuList">
+			<a id="{{ cMenu.id }}" 
+				tabindex="-1" 
+				href="#">
+				{{ cMenu.displayName }}
+			</a>
+		</li>
+	</ul>
+</div>

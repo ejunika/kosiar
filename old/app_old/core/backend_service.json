@@ -1,0 +1,12 @@
+{
+    "SERVER_INFO": {
+        "IP_ADDRESS": "localhost",
+        "PORT": "8181"
+    },
+    "URL": {
+        "FILE_MANAGER": {
+            "CREATE_OR_UPDATE": "file/createFile",
+            "GET_FILE_BY_ID": "file/getFileById"
+        }
+    }
+}

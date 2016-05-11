@@ -1,0 +1,26 @@
+{
+  "name": "the_college_portal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "bootstrap": "^3.3.6",
+    "canvasjs": "^1.8.1",
+    "jquery": "^2.2.1",
+    "jquery-ui": "^1.10.5",
+    "jstree": "^3.2.1",
+    "oclazyload": "^1.0.9",
+    "requirejs": "^2.1.22",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "lite-server": "^2.1.0"
+  },
+  "scripts": {
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "author": "M_A_Akhtar",
+  "license": "MIT"
+}

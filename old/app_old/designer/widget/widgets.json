@@ -1,0 +1,50 @@
+{
+    "groups": [
+        {
+            "id": "CHARTS",
+            "iconClass": "",
+            "iconSrc": "",
+            "active": true,
+            "name": "Charts",
+            "items": [
+                {
+                    "id": "COLUMN_CHART",
+                    "name": "Column Chart",
+                    "visibility": true,
+                    "iconSrc": "",
+                    "iconClass": ""
+                },
+                {
+                    "id": "LINE_CHART",
+                    "name": "Line Chart",
+                    "visibility": true,
+                    "iconSrc": "",
+                    "iconClass": ""
+                },
+                {
+                    "id": "PIE_CHART",
+                    "name": "Pie Chart",
+                    "visibility": true,
+                    "iconSrc": "",
+                    "iconClass": ""
+                }
+            ]
+        },
+        {
+            "id": "FILTERS",
+            "iconClass": "",
+            "iconSrc": "",
+            "active": true,
+            "name": "Filters",
+            "items": [
+                {
+                    "id": "RADIO_BUTTON",
+                    "name": "Radio Button",
+                    "visibility": true,
+                    "iconSrc": "",
+                    "iconClass": ""
+                }
+            ]
+        }
+    ]
+}

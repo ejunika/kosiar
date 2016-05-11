@@ -1,0 +1,60 @@
+<div class="clg-file-browser pull-left">
+	<div id="jstree" data-toggle="context" data-target="#context-menu">
+	    <ul>
+	      <li>My Documents
+	        <ul>
+		    	<li>Domestic</li>
+		        <li data-jstree='{"icon":"glyphicon glyphicon-leaf"}'>Abc</li>
+		        <li>Applications
+		        	<ul>
+		        		<li>JDK</li>
+		        		<li>Tomcat</li>
+		        		<li>Glassfish</li>
+		        	</ul>
+		        </li>
+	        </ul>
+	      </li>
+	    </ul>
+  	</div>
+</div>
+<div class="clg-file-viewer pull-left" 
+	id="context" 
+	data-toggle="context" 
+	data-target="#context-menu">
+	<div id="{{ file.id }}" 
+		class="clg-folder-container dropdown" 
+		ng-dblclick="getChildren( $event, file )"  
+		ng-repeat="file in DATA_SERVICE.FILE_MANAGER.files">
+		<a class="clg-file-option dropdown-toggle" 
+			id="{{ 'FILE_OPN_' + file.id }}"
+			href="javascript: void( 0 )" 
+			data-toggle="dropdown" 
+			aria-haspopup="true" 
+			aria-expanded="false"
+			ng-click="getFileOptions( $event, file )" >
+				<i class="glyphicon glyphicon-cog"></i>
+		</a>
+		<ul class="dropdown-menu clg-folder-dropdown-menu" 
+			aria-labelledby="{{ 'FILE_OPN_' + file.id }}" >
+		    <li ng-click="FILE_SERVICE.onDropdownMenuClick( opn )" 
+		    	ng-repeat="opn in opnList track by $index">
+		    	<a href="#">{{ opn.opnName }}</a>
+		    </li>
+<!-- 		    <li role="separator" class="divider"></li> -->
+		</ul>
+		<a href="javascript: void( 0 )" 
+			class="thumbnail clg-file-grid-view">
+	       <img ng-if="file.folder == true" 
+	       		ng-src="{{ DATA_SERVICE.FILE_MANAGER.ICONS.PATH.FILE_ICON_PATH }}" />
+	       <img ng-if="file.folder != true" 
+	       		ng-src="{{ DATA_SERVICE.FILE_MANAGER.ICONS.PATH.FOLDER_ICON_PATH }}" />
+	       <label ng-click="renameFile( $event, file );" 
+	       		class="clg-file-name-grid">
+	       		{{ file.text }}
+	       </label>
+	       <input ng-model="file.text" 
+	       		class="input-sm clg-file-name-grid-edit-box" 
+	       		type="text" />
+	    </a>
+	</div>
+</div>

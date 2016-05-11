@@ -1,0 +1,26 @@
+<ul class="nav nav-tabs d-tabs pull-left">
+
+        <!-- DASHBOARD TABS -->
+        <li class="d-tab" ng-repeat="dId in openDashboardIds track by dId">
+        	<a id="{{ 'TAB_' + dId }}" 
+        		data-toggle="tab" href="{{ '#' + dId }}">
+        		{{ $parent.dashboardMap[ dId ].Layout.title }}
+        	</a>
+        	<a href="javascript: void( 0 )" class="d-dashboard-remove-btn">
+        		<i class="glyphicon glyphicon-remove pull-right"></i>
+        	</a>
+        </li>
+
+        <!-- ADD DASHBOARD BTN -->
+        <li class="d-add-tab-li">
+        	<a data-toggle="tab" href="#">
+        		&nbsp;
+        	</a>
+        	<a href="javascript: void( 0 )" 
+        		ng-click="addDashboard( $event )" 
+        		class="d-dashboard-remove-btn">
+        			<i class="glyphicon glyphicon-plus pull-right"></i>
+        	</a>
+        </li>
+
+</ul>

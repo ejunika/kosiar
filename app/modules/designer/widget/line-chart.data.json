@@ -1,0 +1,50 @@
+{
+    "GEN_INFO": {
+        "version": "1.0.0",
+        "propGroupOrder": []
+    },
+    "Properties": {
+        "General": {
+            "height": "300",
+            "width": "400",
+            "xCo": "100",
+            "yCo": "100"
+        },
+        "Appearance": {
+        	
+        },
+        "Headings": {
+            "title": "Column Chart"
+        },
+        "Exports": {
+        
+        }
+    },
+    "Data": [
+        {
+            "type": "line",
+            "dataPoints": [
+                {
+                    "label": "Apple",
+                    "y": 10
+                },
+                {
+                    "label": "Orange",
+                    "y": 15
+                },
+                {
+                    "label": "Banana",
+                    "y": 25
+                },
+                {
+                    "label": "Grape",
+                    "y": 30
+                },
+                {
+                    "label": "Mango",
+                    "y": 28
+                }
+            ]
+        }
+    ]
+}
